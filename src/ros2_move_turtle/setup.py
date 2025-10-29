@@ -15,11 +15,12 @@ setup(
     zip_safe=True,
     maintainer='user',
     maintainer_email='mpayercr68@alumnes.ub.edu',
-    description='TODO: Package description',
+    description='Node that moves the turtlesim turtle until x or y > 7',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'move_turtle = ros2_move_turtle.move_turtle:main',
         ],
     },
 )
